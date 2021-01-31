@@ -1,12 +1,8 @@
-#!/Users/raghavendrasaralaya/Documents/python-workbench/expense-report-automation-project/bin/python3
-# EASY-INSTALL-ENTRY-SCRIPT: 'pytesseract==0.3.7','console_scripts','pytesseract'
-__requires__ = 'pytesseract==0.3.7'
+#!/Users/raghavendrasaralaya/Documents/GitHub/expense-report-automation-project/bin/python3
+# -*- coding: utf-8 -*-
 import re
 import sys
-from pkg_resources import load_entry_point
-
+from pytesseract.pytesseract import main
 if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
-    sys.exit(
-        load_entry_point('pytesseract==0.3.7', 'console_scripts', 'pytesseract')()
-    )
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

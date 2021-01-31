@@ -11,7 +11,7 @@ import re
 
 current_dir = os.getcwd()
 
-image_dir = 'images-nov-2020'
+image_dir = 'images-jan-2021'
 image_dir_path = os.path.join(current_dir,image_dir)
 
 image_names = os.listdir(image_dir_path)
@@ -61,7 +61,7 @@ def image_to_data(image_path):
                 image_price_regex = "".join(re.findall('[0-9]',line))
 
                 try:
-                    if int(image_price_regex) > 125:
+                    if int(image_price_regex) > 150:
                         image_price = '_<--->'
                     else:
                         image_price = '_'+ image_price_regex

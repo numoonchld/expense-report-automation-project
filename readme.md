@@ -46,3 +46,15 @@
 
 - open the `.csv` file generated using a spreadsheet editor and sort the sheet by the first column, which has the date and day 
     - rearrange the `night` and `morning` columns to match the final report template 
+
+## Troubleshooting
+
+- `pip install -r requirements.txt`
+    - installs the requirements in the virtual environment
+
+- if this install fails with `Errno 13`:
+    - delete the `bin` and the `lib` folder and recreate a virtual environment 
+    - then run `pip install -r requirements.txt`
+
+- if it still complains, upgrade `pip` and then install from requirements
+    - `pip install --upgrade pip`
